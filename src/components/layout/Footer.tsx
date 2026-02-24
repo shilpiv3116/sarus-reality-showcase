@@ -14,7 +14,7 @@ const Footer = () => {
               <span className="text-gold font-heading text-lg font-semibold">Reality</span>
             </div>
             <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
-              Hyderabad's premier luxury real estate developer. Building landmarks and creating legacies since 2014.
+              Hyderabad's premier luxury real estate developer. Building landmarks and creating legacies since 2019.
             </p>
             <div className="flex gap-4">
               {["Facebook", "Instagram", "LinkedIn", "Twitter"].map((s) => (
