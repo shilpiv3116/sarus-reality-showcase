@@ -32,8 +32,8 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
-    slug: "sarus-heights",
-    name: "Sarus Heights",
+    slug: "sarus-swasthi",
+    name: "Sarus Swasthi",
     tagline: "Elevate Your Lifestyle",
     category: "ongoing",
     type: "Luxury Apartments",
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     image: projectHeights,
     status: "Under Construction",
     rera: "P02400005678",
-    description: "Sarus Heights redefines luxury living in the heart of Hyderabad's IT corridor. With 24 floors of meticulously designed residences, world-class amenities, and panoramic city views, this is where modern luxury meets timeless elegance. Every apartment is crafted with premium Italian marble flooring, modular kitchens, and smart home automation.",
+    description: "Sarus Swasthi redefines luxury living in the heart of Hyderabad's IT corridor. With 24 floors of meticulously designed residences, world-class amenities, and panoramic city views, this is where modern luxury meets timeless elegance. Every apartment is crafted with premium Italian marble flooring, modular kitchens, and smart home automation.",
     highlights: [
       "24-floor premium tower",
       "Italian marble flooring",

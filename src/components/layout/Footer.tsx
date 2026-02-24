@@ -48,7 +48,7 @@ const Footer = () => {
             <h4 className="text-gold font-heading text-lg mb-4">Our Projects</h4>
             <div className="flex flex-col gap-2">
               {[
-                { label: "Sarus Heights", to: "/projects/sarus-heights" },
+                { label: "Sarus Swasthi", to: "/projects/sarus-heights" },
                 { label: "Sarus Elite Villas", to: "/projects/sarus-elite-villas" },
                 { label: "Sarus Business Park", to: "/projects/sarus-business-park" },
               ].map((l) => (

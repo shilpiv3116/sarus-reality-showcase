@@ -25,7 +25,7 @@ const Index = () => {
   ];
 
   const testimonials = [
-    { name: "Rajesh Kumar", role: "Homeowner, Sarus Heights", text: "The quality of construction and attention to detail at Sarus Heights is unmatched. From the Italian marble flooring to the smart home features, everything exceeds expectations. Best decision our family ever made." },
+    { name: "Rajesh Kumar", role: "Homeowner, Sarus Swasthi", text: "The quality of construction and attention to detail at Sarus Swasthi is unmatched. From the Italian marble flooring to the smart home features, everything exceeds expectations. Best decision our family ever made." },
     { name: "Priya Sharma", role: "Investor", text: "I've invested in two Sarus projects and the returns have been phenomenal. Their commitment to timely delivery and premium quality makes them the most reliable developer in Hyderabad." },
     { name: "Anil Reddy", role: "Homeowner, Sarus Elite Villas", text: "Living in Sarus Elite Villas feels like a permanent vacation. The landscaping, the community, the amenities — everything is world-class. We couldn't be happier." },
   ];

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Award, Target, Eye, Users } from "lucide-react";
-import founderImg from "@/assets/founder.jpg";
+import { Award, Target, Eye, Users, Leaf } from "lucide-react";
+import founderImg from "@/assets/founder.png";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -9,20 +9,32 @@ const fadeInUp = {
 };
 
 const About = () => {
-  const timeline = [
-    { year: "2014", title: "Founded", desc: "Sarus Reality was established with a vision to redefine luxury living in Hyderabad." },
-    { year: "2016", title: "First Project Launch", desc: "Launched our first residential project in Gachibowli, sold out within 6 months." },
-    { year: "2018", title: "Expansion", desc: "Expanded into villa developments and commercial spaces. Crossed 1M sq ft delivered." },
-    { year: "2020", title: "Award-Winning", desc: "Won Best Luxury Developer award from CREDAI. Launched Sarus Heights." },
-    { year: "2022", title: "Commercial Milestone", desc: "Completed Sarus Business Park in HITEC City. Crossed 3M sq ft developed." },
-    { year: "2024", title: "Market Leader", desc: "Recognized as Hyderabad's most trusted luxury developer. 5000+ happy families." },
-  ];
-
-  const leadership = [
-    { name: "Vikram Reddy", role: "Founder & Chairman", desc: "25+ years in real estate development" },
-    { name: "Priya Menon", role: "CEO", desc: "Former VP at a Fortune 500 real estate firm" },
-    { name: "Arjun Sharma", role: "VP - Projects", desc: "Delivered 20+ large-scale projects" },
-    { name: "Lakshmi Devi", role: "VP - Sales & Marketing", desc: "15+ years in luxury real estate marketing" },
+  const milestones = [
+    {
+      year: "2019",
+      title: "The Beginning",
+      desc: "Sarus was founded just before the COVID-19 pandemic reshaped the world. What began as a bold vision quickly turned into a test of resilience."
+    },
+    {
+      year: "2020",
+      title: "Building Through Lockdown",
+      desc: "Amid nationwide lockdowns and unprecedented challenges, we adapted swiftly — ensuring safety, efficiency, and continuity without compromising on quality."
+    },
+    {
+      year: "2021",
+      title: "Future-Ready Approach",
+      desc: "The global pause became an opportunity. We redefined our construction philosophy — integrating sustainability, adaptability, and long-term resilience."
+    },
+    {
+      year: "2023",
+      title: "Sustainable Growth",
+      desc: "Committed to balancing innovation with environmental responsibility, we focused on green practices and future-ready infrastructure."
+    },
+    {
+      year: "Today",
+      title: "Building Legacies",
+      desc: "Today, Sarus stands as a symbol of strength, adaptability, and trust — delivering spaces built not just for today, but for generations."
+    },
   ];
 
   return (
@@ -30,9 +42,13 @@ const About = () => {
       {/* Hero */}
       <section className="navy-gradient py-20">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-gold uppercase tracking-widest text-sm font-medium mb-2">About Us</p>
-          <h1 className="font-heading text-4xl md:text-5xl font-bold text-primary-foreground mb-4">Our Story</h1>
-          <p className="text-primary-foreground/60 max-w-xl mx-auto">A decade of excellence in crafting luxury real estate that stands the test of time.</p>
+          <p className="text-gold uppercase tracking-widest text-sm font-medium mb-2">About Sarus</p>
+          <h1 className="font-heading text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
+            Future Ready. Built on Resilience.
+          </h1>
+          <p className="text-primary-foreground/70 max-w-2xl mx-auto">
+            Our journey began at one of the most uncertain times in modern history — and that challenge shaped who we are today.
+          </p>
         </div>
       </section>
 
@@ -40,51 +56,93 @@ const About = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}>
-              <img src={founderImg} alt="Founder" className="rounded-lg shadow-premium w-full max-w-md mx-auto" />
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+            >
+              <img
+                src={founderImg}
+                alt="Rajavardhan Tondapu"
+                className="rounded-lg shadow-premium w-full max-w-md mx-auto"
+              />
             </motion.div>
             <div>
-              <p className="text-gold uppercase tracking-widest text-sm font-medium mb-2">Founder's Message</p>
-              <h2 className="font-heading text-3xl font-bold text-foreground mb-4">Building With Purpose</h2>
+              <p className="text-gold uppercase tracking-widest text-sm font-medium mb-2">
+                Founder’s Message
+              </p>
+              <h2 className="font-heading text-3xl font-bold text-foreground mb-4">
+                Strength in Adversity
+              </h2>
               <blockquote className="text-muted-foreground leading-relaxed space-y-4">
-                <p>"When I founded Sarus Reality in 2014, I had one simple belief — every family deserves a home that inspires them. Not just walls and roofs, but spaces that elevate daily life."</p>
-                <p>"Over the past decade, we've stayed true to this vision. Every project we build carries the Sarus promise: uncompromising quality, timely delivery, and designs that stand the test of time."</p>
-                <p>"As Hyderabad grows into a global city, we're committed to creating landmarks that our families will be proud of for generations."</p>
+                <p>
+                  "Sarus was born just before COVID-19 reached Indian shores. What followed was one of the most challenging periods the real estate industry had ever faced."
+                </p>
+                <p>
+                  "In our very first project, we encountered unprecedented obstacles. Yet, we successfully completed it — a testament to our adaptability, resilience, and commitment to excellence."
+                </p>
+                <p>
+                  "The lockdown gave the world time to pause. For us, it was an opportunity to rethink how we build — with sustainability, long-term strength, and responsibility at the core."
+                </p>
+                <p>
+                  "We are committed to building spaces that balance innovation with sustainability — spaces that are not only beautiful, but future-ready."
+                </p>
               </blockquote>
-              <p className="mt-6 font-heading text-lg font-bold text-foreground">Vikram Reddy</p>
-              <p className="text-gold text-sm">Founder & Chairman, Sarus Reality</p>
+              <p className="mt-6 font-heading text-lg font-bold text-foreground">
+                Rajavardhan Tondapu
+              </p>
+              <p className="text-gold text-sm">
+                Founder & Chairman, Sarus
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Vision & Mission */}
+      {/* Vision & Commitment */}
       <section className="py-16 bg-cream-dark">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-card p-8 rounded-lg shadow-sm">
-              <Eye className="w-10 h-10 text-gold mb-4" />
-              <h3 className="font-heading text-2xl font-bold text-foreground mb-3">Our Vision</h3>
-              <p className="text-muted-foreground leading-relaxed">To be India's most trusted luxury real estate developer, creating iconic landmarks that inspire communities and set new benchmarks in quality, design, and sustainability.</p>
-            </div>
-            <div className="bg-card p-8 rounded-lg shadow-sm">
-              <Target className="w-10 h-10 text-gold mb-4" />
-              <h3 className="font-heading text-2xl font-bold text-foreground mb-3">Our Mission</h3>
-              <p className="text-muted-foreground leading-relaxed">To deliver world-class living and working spaces that combine architectural excellence with sustainable practices, ensuring every Sarus project becomes a legacy for generations.</p>
-            </div>
+        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-card p-8 rounded-lg shadow-sm">
+            <Eye className="w-10 h-10 text-gold mb-4" />
+            <h3 className="font-heading text-xl font-bold mb-3">Our Vision</h3>
+            <p className="text-muted-foreground text-sm">
+              To create future-ready living spaces that stand resilient against changing times while setting new benchmarks in quality and trust.
+            </p>
+          </div>
+
+          <div className="bg-card p-8 rounded-lg shadow-sm">
+            <Target className="w-10 h-10 text-gold mb-4" />
+            <h3 className="font-heading text-xl font-bold mb-3">Our Mission</h3>
+            <p className="text-muted-foreground text-sm">
+              To deliver projects that combine architectural excellence, operational efficiency, and sustainability — without compromising integrity.
+            </p>
+          </div>
+
+          <div className="bg-card p-8 rounded-lg shadow-sm">
+            <Leaf className="w-10 h-10 text-gold mb-4" />
+            <h3 className="font-heading text-xl font-bold mb-3">Sustainability Promise</h3>
+            <p className="text-muted-foreground text-sm">
+              We follow practices that strike a balance between environmental responsibility and the ability to face unforeseen global challenges.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Timeline */}
+      {/* Journey Timeline */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <p className="text-gold uppercase tracking-widest text-sm font-medium mb-2">Our Journey</p>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">A Decade of Excellence</h2>
+            <p className="text-gold uppercase tracking-widest text-sm font-medium mb-2">
+              Our Journey
+            </p>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
+              Built Through Challenge
+            </h2>
           </div>
+
           <div className="max-w-3xl mx-auto">
-            {timeline.map((item, i) => (
+            {milestones.map((item, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, x: i % 2 === 0 ? -30 : 30 }}
@@ -93,59 +151,22 @@ const About = () => {
                 className="flex gap-6 mb-8"
               >
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 gold-gradient rounded-full flex items-center justify-center text-primary font-bold text-sm shrink-0">
+                  <div className="w-12 h-12 gold-gradient rounded-full flex items-center justify-center text-primary font-bold text-sm">
                     {item.year}
                   </div>
-                  {i < timeline.length - 1 && <div className="w-px flex-1 bg-border mt-2" />}
+                  {i < milestones.length - 1 && (
+                    <div className="w-px flex-1 bg-border mt-2" />
+                  )}
                 </div>
                 <div className="pb-8">
-                  <h4 className="font-heading text-lg font-bold text-foreground">{item.title}</h4>
-                  <p className="text-muted-foreground text-sm mt-1">{item.desc}</p>
+                  <h4 className="font-heading text-lg font-bold text-foreground">
+                    {item.title}
+                  </h4>
+                  <p className="text-muted-foreground text-sm mt-1">
+                    {item.desc}
+                  </p>
                 </div>
               </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Leadership */}
-      <section className="py-16 navy-gradient">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <p className="text-gold uppercase tracking-widest text-sm font-medium mb-2">Our Team</p>
-            <h2 className="font-heading text-3xl font-bold text-primary-foreground">Leadership</h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {leadership.map((person, i) => (
-              <div key={i} className="bg-primary-foreground/5 border border-primary-foreground/10 rounded-lg p-6 text-center backdrop-blur-sm">
-                <div className="w-20 h-20 bg-gold/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Users className="w-8 h-8 text-gold" />
-                </div>
-                <h4 className="font-heading font-bold text-primary-foreground">{person.name}</h4>
-                <p className="text-gold text-sm font-medium">{person.role}</p>
-                <p className="text-primary-foreground/50 text-xs mt-2">{person.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Awards */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-gold uppercase tracking-widest text-sm font-medium mb-2">Recognition</p>
-          <h2 className="font-heading text-3xl font-bold text-foreground mb-8">Awards & Certifications</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              "Best Luxury Developer 2024 — CREDAI",
-              "Most Trusted Brand — Times Awards",
-              "Green Building Excellence — IGBC",
-              "Best Residential Project — Realty Plus",
-            ].map((award, i) => (
-              <div key={i} className="bg-card p-6 rounded-lg shadow-sm border border-border text-center">
-                <Award className="w-10 h-10 text-gold mx-auto mb-3" />
-                <p className="text-sm font-medium text-foreground">{award}</p>
-              </div>
             ))}
           </div>
         </div>
@@ -154,9 +175,16 @@ const About = () => {
       {/* CTA */}
       <section className="py-16 gold-gradient">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-heading text-3xl font-bold text-primary mb-4">Join the Sarus Family</h2>
-          <p className="text-primary/70 mb-8 max-w-lg mx-auto">Discover why 5000+ families trust Sarus Reality for their dream homes.</p>
-          <Link to="/contact" className="bg-primary text-primary-foreground font-semibold px-8 py-3.5 rounded hover:bg-navy-light transition-all">
+          <h2 className="font-heading text-3xl font-bold text-primary mb-4">
+            Building a Sustainable Future Together
+          </h2>
+          <p className="text-primary/70 mb-8 max-w-lg mx-auto">
+            Discover how Sarus combines resilience, innovation, and responsibility in every project.
+          </p>
+          <Link
+            to="/contact"
+            className="bg-primary text-primary-foreground font-semibold px-8 py-3.5 rounded hover:bg-navy-light transition-all"
+          >
             Get in Touch
           </Link>
         </div>
