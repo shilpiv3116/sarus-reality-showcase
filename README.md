@@ -1,4 +1,4 @@
-# Welcome to your Sarus Reality
+# Welcome to your Sarus Realty
 
 ## Project info
 

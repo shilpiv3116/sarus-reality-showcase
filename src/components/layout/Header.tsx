@@ -38,7 +38,7 @@ const Header = () => {
         <Link to="/" className="flex items-center gap-2">
           <img src={logo} alt="Sarus" className="h-10 md:h-12 brightness-0 invert" />
           <span className="text-gold font-heading text-lg md:text-xl font-semibold tracking-wide">
-            Reality
+            Realty
           </span>
         </Link>
 

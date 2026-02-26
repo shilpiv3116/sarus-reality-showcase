@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img src={logo} alt="Sarus" className="h-10 brightness-0 invert" />
-              <span className="text-gold font-heading text-lg font-semibold">Reality</span>
+              <span className="text-gold font-heading text-lg font-semibold">Realty</span>
             </div>
             <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
               Hyderabad's premier luxury real estate developer. Building landmarks and creating legacies since 2019.
@@ -73,7 +73,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-gold shrink-0" />
-                <a href="mailto:info@sarusreality.com" className="hover:text-gold transition-colors">info@sarusreality.com</a>
+                <a href="mailto:info@sarusrealty.com" className="hover:text-gold transition-colors">info@sarusrealty.com</a>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ const Footer = () => {
 
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between text-xs text-primary-foreground/40">
-          <p>© 2025 Sarus Reality. All rights reserved.</p>
+          <p>© 2025 Sarus Realty. All rights reserved.</p>
           <div className="flex gap-4 mt-2 md:mt-0">
             <a href="#" className="hover:text-gold transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-gold transition-colors">Terms of Service</a>

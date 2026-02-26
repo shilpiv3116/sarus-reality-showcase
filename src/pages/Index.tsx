@@ -51,7 +51,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative h-[90vh] min-h-[600px] flex items-center">
         <div className="absolute inset-0">
-          <img src={heroBanner} alt="Sarus Reality" className="w-full h-full object-cover" />
+          <img src={heroBanner} alt="Sarus Realty" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/40" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
@@ -172,7 +172,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <p className="text-gold uppercase tracking-widest text-sm font-medium mb-2">The Sarus Advantage</p>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">Why Choose Sarus Reality</h2>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">Why Choose Sarus Realty</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyChoose.map((item, i) => (

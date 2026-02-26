@@ -105,9 +105,9 @@ const Contact = () => {
                     <Mail className="w-5 h-5 text-gold mt-0.5 shrink-0" />
                     <div>
                       <h4 className="font-semibold text-foreground text-sm">Email</h4>
-                      <a href="mailto:info@sarusreality.com" className="text-sm text-gold">info@sarusreality.com</a>
+                      <a href="mailto:info@sarusrealty.com" className="text-sm text-gold">info@sarusrealty.com</a>
                       <br />
-                      <a href="mailto:sales@sarusreality.com" className="text-sm text-muted-foreground">sales@sarusreality.com</a>
+                      <a href="mailto:sales@sarusrealty.com" className="text-sm text-muted-foreground">sales@sarusrealty.com</a>
                     </div>
                   </div>
                 </div>
